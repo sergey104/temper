@@ -1,0 +1,688 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+2016-09-21 07:55:13.747 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2016-09-21 07:55:13.750 [1;32mZMQ [1;34mconnected to tcp://ip-172-31-19-171.eu-west-1.compute.internal:24000[0m
+2016-09-21 07:55:13.751 [1;32mZMQ [1;34mconnecting to monitor/zeromq[0m
+2016-09-21 07:55:13.753 [1;32mZMQ [1;34mconnected to tcp://ip-172-31-19-171.eu-west-1.compute.internal:24000[0m
+2016-09-21 07:55:13.754 [1;32mSlaveBanker [1;34mSync Rate: 1[0m
+2016-09-21 07:55:13.754 [1;32mSlaveBanker [1;34mSpend Rate: {"USD/1M":100000}[0m
+2016-09-21 07:55:13.755 [1;32mZMQ [1;34mconnecting to masterBanker/zeromq[0m
+2016-09-21 07:55:13.758 [1;32mZMQ [1;34mconnected to tcp://ip-172-31-19-171.eu-west-1.compute.internal:22000[0m
+2016-09-21 07:55:13.758 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2016-09-21 07:55:13.773 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2016-09-21 07:55:13.773 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+augmentor frequency-cap-ex has connected
+2016-09-21 07:55:13.774 [1;32mMessage Loop Warning [1;34mmessage loop in polling mode will cause 2000 context switches per second due to polling on sources ZmqNamedEndpoint::socket[0m
+2016-09-21 07:55:13.775 [1;32mZMQ Trace [1;34mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2016-09-21 07:55:13.776 [1;32mZMQ [1;34mconnecting to PostAuctionLoop/events[0m
+agent fixed-price-agent-ex_17147 connected to router
+2016-09-21 07:55:13.777 [1;32mZMQ [1;34mconnected to tcp://ip-172-31-19-171.eu-west-1.compute.internal:20000[0m
+agent fixed-price-agent-ex_17146 connected to router
+2016-09-21 07:55:13.778 [1;32mZMQ [1;34mconnecting to agentConfigurationService/listen[0m
+2016-09-21 07:55:13.779 [1;32mZMQ [1;34mconnected to tcp://ip-172-31-19-171.eu-west-1.compute.internal:19000[0m
+got configuration message fixed-price-agent-ex_17147
+got configuration message fixed-price-agent-ex_17146
+listening on hostname 0.0.0.0 port 17339
+********* calling addSpendAccount for rec:second for SlaveBanker router.slaveBanker
+********* calling addSpendAccount for main:first for SlaveBanker router.slaveBanker
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+2016-09-21 07:55:14.656 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630349035264
+2016-09-21 07:55:14.768 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+appodeal connector response 200:{"id":"12fe3a6d-18b2-4f2a-8cdc-d5db73f6e15e1474444523042","seatbid":[{"bid":[{"id":"12fe3a6d-18b2-4f2a-8cdc-d5db73f6e15e1474444523042:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-728x90.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-728x90.gif","cid":"fixed-price-agent-ex_17146","crid":"2","ext":{"group_class":"group_class","uniq_id":"world:Banner1"}}],"seat":"0"}]}
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+2016-09-21 07:55:15.729 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+2016-09-21 07:55:16.483 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+appodeal connector response 204: none
+Auction droped: random early drop
+my thread 140630349035264
+appodeal connector response 200:{"id":"2df7c4bb-7014-4346-99bc-7503c3e830221474444513425","seatbid":[{"bid":[{"id":"2df7c4bb-7014-4346-99bc-7503c3e830221474444513425:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:16.8146 vs 2016-Sep-21 07:55:14.6582, available time = 340.0ms, firstData = 2016-Sep-21 07:55:14.3382
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+appodeal connector response 200:{"id":"d8dbcbb7-f248-40c8-a017-4280db98f96a1474444515295","seatbid":[{"bid":[{"id":"d8dbcbb7-f248-40c8-a017-4280db98f96a1474444515295:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+2016-09-21 07:55:17.220 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630349035264
+2016-09-21 07:55:17.373 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+appodeal connector response 204: none
+Auction droped: random early drop
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+2016-09-21 07:55:17.891 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+auction started after time already elapsed: 2016-Sep-21 07:55:17.8910 vs 2016-Sep-21 07:55:17.3718, available time = 340.0ms, firstData = 2016-Sep-21 07:55:17.0518
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:18.3009 vs 2016-Sep-21 07:55:15.4637, available time = 340.0ms, firstData = 2016-Sep-21 07:55:15.1437
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:18.4970 vs 2016-Sep-21 07:55:18.1533, available time = 340.0ms, firstData = 2016-Sep-21 07:55:17.8333
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:18.6247 vs 2016-Sep-21 07:55:16.8655, available time = 340.0ms, firstData = 2016-Sep-21 07:55:16.5455
+appodeal connector response 204: none
+Auction droped: auction already expired
+2016-09-21 07:55:18.631 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 0is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+2016-09-21 07:55:18.732 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+2016-09-21 07:55:18.805 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+2016-09-21 07:55:18.888 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+2016-09-21 07:55:19.317 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+auction started after time already elapsed: 2016-Sep-21 07:55:19.3812 vs 2016-Sep-21 07:55:18.7550, available time = 340.0ms, firstData = 2016-Sep-21 07:55:18.4350
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630357427968
+appodeal connector response 200:{"id":"ddbe44aa-64e8-4fdb-a15e-516c6a30cd1f1474444516780","seatbid":[{"bid":[{"id":"ddbe44aa-64e8-4fdb-a15e-516c6a30cd1f1474444516780:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+appodeal connector response 200:{"id":"5dda595c-2c19-4e6d-a0e2-b3ecfa0aaa161474444517691","seatbid":[{"bid":[{"id":"5dda595c-2c19-4e6d-a0e2-b3ecfa0aaa161474444517691:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-728x90.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-728x90.gif","cid":"fixed-price-agent-ex_17146","crid":"2","ext":{"group_class":"group_class","uniq_id":"world:Banner1"}}],"seat":"0"}]}
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:20Z
+type:   ML::Exception
+pid:    17137; tid: 17256
+what:   attempt to double add id 90d2a878-148c-42ae-b78d-0754ceb5537e for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b32e at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0xfe in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae32e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0xfe) [0x7fe743b9b32e]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id 90d2a878-148c-42ae-b78d-0754ceb5537e for xchg
+
+my thread 140630349035264
+2016-09-21 07:55:20.189 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+appodeal connector response 200:{"id":"0d547267-78e2-47a6-ad1d-97087f9b69ac1474444516628","seatbid":[{"bid":[{"id":"0d547267-78e2-47a6-ad1d-97087f9b69ac1474444516628:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+error: Connection reset by peer
+my thread 140630357427968
+2016-09-21 07:55:20.535 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 0is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630357427968
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:20Z
+type:   ML::Exception
+pid:    17137; tid: 17256
+what:   attempt to double add id a7b088ef-b3af-48ac-9a95-3e36b95f037c for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b397 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x167 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x167) [0x7fe743b9b397]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id a7b088ef-b3af-48ac-9a95-3e36b95f037c for xchg
+
+my thread 140630357427968
+appodeal connector response 200:{"id":"06927d11-30b0-4a7f-af31-ff4a66f0e0fb1474444519081","seatbid":[{"bid":[{"id":"06927d11-30b0-4a7f-af31-ff4a66f0e0fb1474444519081:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+2016-09-21 07:55:20.714 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+2016-09-21 07:55:20.737 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+appodeal connector response 200:{"id":"11b46ae2-6289-4fd2-aa26-e5adaabc05f01474444520432","seatbid":[{"bid":[{"id":"11b46ae2-6289-4fd2-aa26-e5adaabc05f01474444520432:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:21Z
+type:   ML::Exception
+pid:    17137; tid: 17256
+what:   attempt to double add id bcddaa4c-085b-4ca3-a4d3-873c92230906 for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b397 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x167 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x167) [0x7fe743b9b397]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id bcddaa4c-085b-4ca3-a4d3-873c92230906 for xchg
+
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+auction started after time already elapsed: 2016-Sep-21 07:55:22.1956 vs 2016-Sep-21 07:55:20.0948, available time = 340.0ms, firstData = 2016-Sep-21 07:55:19.7748
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630357427968
+2016-09-21 07:55:22.351 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+2016-09-21 07:55:22.376 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+auction started after time already elapsed: 2016-Sep-21 07:55:22.6212 vs 2016-Sep-21 07:55:22.5839, available time = 340.0ms, firstData = 2016-Sep-21 07:55:22.2639
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+my thread 140630349035264
+2016-09-21 07:55:22.681 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+2016-09-21 07:55:22.729 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 0is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630357427968
+appodeal connector response 200:{"id":"2f3d782f-1c88-4910-afdb-8c18291d4adb1474444519905","seatbid":[{"bid":[{"id":"2f3d782f-1c88-4910-afdb-8c18291d4adb1474444519905:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:23Z
+type:   ML::Exception
+pid:    17137; tid: 17255
+what:   attempt to double add id 8a183754-d0d7-45b3-b470-4ef8c99bdbfc for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b397 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x167 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x167) [0x7fe743b9b397]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id 8a183754-d0d7-45b3-b470-4ef8c99bdbfc for xchg
+
+2016-09-21 07:55:23.225 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+2016-09-21 07:55:23.266 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:23.3317 vs 2016-Sep-21 07:55:22.6319, available time = 340.0ms, firstData = 2016-Sep-21 07:55:22.3119
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:23Z
+type:   ML::Exception
+pid:    17137; tid: 17256
+what:   attempt to double add id 9f832b19-79dd-4809-9bd0-49df7283decc for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b397 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x167 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x167) [0x7fe743b9b397]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id 9f832b19-79dd-4809-9bd0-49df7283decc for xchg
+
+my thread 140630357427968
+total of 1.00147e+07 microseconds and 279 sleeps
+BID                                   9        873   0.01%    97.00us/call
+CONFIG                                2        635   0.01%   317.50us/call
+HEARTBEAT                            20        210   0.00%    10.50us/call
+HELLO                                 2       1713   0.02%   856.50us/call
+PONG0                                18        272   0.00%    15.11us/call
+PONG1                                18        136   0.00%     7.56us/call
+checkExpiredAuctions                279       1089   0.01%     3.90us/call
+checks                              305          1   0.00%     0.00us/call
+configureAgentOnExchange            306        139   0.00%     0.45us/call
+doBid                               306          1   0.00%     0.00us/call
+doConfig                            306       1119   0.01%     3.66us/call
+doStartBidding                      306       2481   0.02%     8.11us/call
+doSubmitted                         306       1333   0.01%     4.36us/call
+logBidEvents                         10        199   0.00%    19.90us/call
+sendPings                             9        270   0.00%    30.00us/call
+sleep                               279       4587   0.05%    16.44us/call
+sleepPoll                           279    9993904  99.79% 35820.44us/call
+spinPoll                            306       5690   0.06%    18.59us/call
+my thread 140630349035264
+my thread 140630349035264
+2016-09-21 07:55:23.868 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+appodeal connector response 200:{"id":"447331e9-6637-4388-b7a0-8987d1b7f0161474444519302","seatbid":[{"bid":[{"id":"447331e9-6637-4388-b7a0-8987d1b7f0161474444519302:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:23.9747 vs 2016-Sep-21 07:55:23.6618, available time = 340.0ms, firstData = 2016-Sep-21 07:55:23.3418
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+2016-09-21 07:55:24.204 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+auction started after time already elapsed: 2016-Sep-21 07:55:24.2044 vs 2016-Sep-21 07:55:24.0467, available time = 340.0ms, firstData = 2016-Sep-21 07:55:23.7267
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+appodeal connector response 200:{"id":"7193a4aa-c65c-47c1-97ce-813a553ffe651474445207688","seatbid":[{"bid":[{"id":"7193a4aa-c65c-47c1-97ce-813a553ffe651474445207688:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630349035264
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:24Z
+type:   ML::Exception
+pid:    17137; tid: 17255
+what:   attempt to double add id 5355731b-39d7-4863-86d5-1c3af4e02d8c for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b397 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x167 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x167) [0x7fe743b9b397]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id 5355731b-39d7-4863-86d5-1c3af4e02d8c for xchg
+
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+auction started after time already elapsed: 2016-Sep-21 07:55:24.7574 vs 2016-Sep-21 07:55:24.5808, available time = 340.0ms, firstData = 2016-Sep-21 07:55:24.2608
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+my thread 140630357427968
+auction started after time already elapsed: 2016-Sep-21 07:55:24.8673 vs 2016-Sep-21 07:55:24.5781, available time = 340.0ms, firstData = 2016-Sep-21 07:55:24.2581
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+2016-09-21 07:55:25.012 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+appodeal connector response 200:{"id":"0136b4f1-98f9-49fa-a340-8214fb176c521474444522498","seatbid":[{"bid":[{"id":"0136b4f1-98f9-49fa-a340-8214fb176c521474444522498:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630357427968
+2016-09-21 07:55:25.347 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+appodeal connector response 200:{"id":"7cf4168d-b2f9-4d1d-a933-82b83648dbc51474444528151","seatbid":[{"bid":[{"id":"7cf4168d-b2f9-4d1d-a933-82b83648dbc51474444528151:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-728x90.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-728x90.gif","cid":"fixed-price-agent-ex_17146","crid":"2","ext":{"group_class":"group_class","uniq_id":"world:Banner1"}}],"seat":"0"}]}
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+appodeal connector response 200:{"id":"54aa46c3-67a3-4f2c-a60e-26afc866e4ec1474448127481","seatbid":[{"bid":[{"id":"54aa46c3-67a3-4f2c-a60e-26afc866e4ec1474448127481:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:55:26Z
+type:   ML::Exception
+pid:    17137; tid: 17255
+what:   attempt to double add id 90d2a878-148c-42ae-b78d-0754ceb5537e for xchg
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe742ea2144 at RTBKIT::UserIds::add(Datacratic::Id const&, RTBKIT::IdDomain) + 0x154 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so + 0x86144/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libbid_request.so(_ZN6RTBKIT7UserIds3addERKN10Datacratic2IdENS_8IdDomainE+0x154) [0x7fe742ea2144]
+02: 0x0x7fe7304c2eae at RTBKIT::AppodealExchangeConnector::parseBidRequest(RTBKIT::HttpAuctionHandler&, Datacratic::HttpHeader const&, std::string const&) + 0x41e in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so + 0x39eae/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/libappodeal_exchange.so(_ZN6RTBKIT25AppodealExchangeConnector15parseBidRequestERNS_18HttpAuctionHandlerERKN10Datacratic10HttpHeaderERKSs+0x41e) [0x7fe7304c2eae]
+03: 0x0x7fe730274c69 at RTBKIT::HttpAuctionHandler::parseBidRequest(Datacratic::HttpHeader const&, std::string const&) + 0x29 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3ac69/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler15parseBidRequestERKN10Datacratic10HttpHeaderERKSs+0x29) [0x7fe730274c69]
+04: 0x0x7fe73027694e at RTBKIT::HttpAuctionHandler::handleHttpPayload(Datacratic::HttpHeader const&, std::string const&) + 0x2ae in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so + 0x3c94e/home/ubuntu/rtbkit/build/x86_64/bin/../bin/../bin/../bin/libexchange.so(_ZN6RTBKIT18HttpAuctionHandler17handleHttpPayloadERKN10Datacratic10HttpHeaderERKSs+0x2ae) [0x7fe73027694e]
+05: 0x0x7fe743b9ba0a at Datacratic::HttpConnectionHandler::handleHttpData(std::string const&) + 0x39a in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xaea0a/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler14handleHttpDataERKSs+0x39a) [0x7fe743b9ba0a]
+06: 0x0x7fe743b9b397 at Datacratic::HttpConnectionHandler::handleData(std::string const&) + 0x167 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic21HttpConnectionHandler10handleDataERKSs+0x167) [0x7fe743b9b397]
+07: 0x0x7fe743b9812c at Datacratic::PassiveConnectionHandler::handleInput() + 0x19c in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xab12c/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic24PassiveConnectionHandler11handleInputEv+0x19c) [0x7fe743b9812c]
+08: 0x0x7fe743b89d96 at Datacratic::TransportBase::handleInput() + 0x126 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9cd96/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase11handleInputEv+0x126) [0x7fe743b89d96]
+09: 0x0x7fe743b88b27 at Datacratic::TransportBase::handleEvents() + 0x797 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9bb27/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBase12handleEventsEv+0x797) [0x7fe743b88b27]
+10: 0x0x7fe743b8e5a4 at Datacratic::EndpointBase::handleTransportEvent(std::shared_ptr<Datacratic::TransportBase> const&) + 0x14 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa15a4/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase20handleTransportEventERKSt10shared_ptrINS_13TransportBaseEE+0x14) [0x7fe743b8e5a4]
+11: 0x0x7fe743b8e7c5 at Datacratic::EndpointBase::handleEpollEvent(epoll_event&) + 0xa5 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa17c5/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase16handleEpollEventER11epoll_event+0xa5) [0x7fe743b8e7c5]
+12: 0x0x7fe743baef36 at Datacratic::Epoller::handleEvents(int, int, std::function<Datacratic::Epoller::HandleEventResult (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x1f6 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc1f36/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFNS0_17HandleEventResultER11epoll_eventEERKS1_IFvvEESC_+0x1f6) [0x7fe743baef36]
+13: 0x0x7fe743b8fcde at Datacratic::EndpointBase::runEventThread(int, int) + 0x3ee in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa2cde/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic12EndpointBase14runEventThreadEii+0x3ee) [0x7fe743b8fcde]
+14: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+15: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+16: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+appodeal connector response 400:INVALID_BID_REQUEST: Error parsing bid request : attempt to double add id 90d2a878-148c-42ae-b78d-0754ceb5537e for xchg
+
+my thread 140630357427968
+auction started after time already elapsed: 2016-Sep-21 07:55:26.8848 vs 2016-Sep-21 07:55:26.5598, available time = 340.0ms, firstData = 2016-Sep-21 07:55:26.2398
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+2016-09-21 07:55:27.321 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+2016-09-21 07:55:27.389 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630357427968
+2016-09-21 07:55:27.492 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+2016-09-21 07:55:27.498 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 2is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+2016-09-21 07:55:27.971 [1;32mOpenRTB Bid Request Parser [1;34m br.user.gender : 1is invalid. It should be either 'M' 'F' 'O' or null/empty[0m
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630349035264
+auction started after time already elapsed: 2016-Sep-21 07:55:28.2362 vs 2016-Sep-21 07:55:28.1610, available time = 340.0ms, firstData = 2016-Sep-21 07:55:27.8410
+appodeal connector response 204: none
+Auction droped: auction already expired
+my thread 140630349035264
+my thread 140630349035264
+my thread 140630357427968
+appodeal connector response 200:{"id":"63022b53-5021-48a9-baf9-e8cefe6fa4881474444525750","seatbid":[{"bid":[{"id":"63022b53-5021-48a9-baf9-e8cefe6fa4881474444525750:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+my thread 140630357427968
+my thread 140630349035264
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+my thread 140630357427968
+appodeal connector response 200:{"id":"d9063001-f894-4490-8936-0e9bfb03c1931474444526276","seatbid":[{"bid":[{"id":"d9063001-f894-4490-8936-0e9bfb03c1931474444526276:1","impid":"1","price":5,"nurl":"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=nurl&user=default&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}","adm":"<script src='mraid.js'></script><script> var impressionTrackers = [\"http://nurl.5kszypekn4.eu-west-1.elasticbeanstalk.com/?action=event&user=default&type=IMPRESSION&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var clickTrackers = [\"http://amadoad-dev.eu-west-1.elasticbeanstalk.com/api/v1/event?type=CLICK&auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"]; var targetLink = \"http://178.124.156.242:17343?auctionId=${AUCTION_ID}&bidRequestId=${AUCTION_BID_ID}&impId=${AUCTION_IMP_ID}&winPrice=${AUCTION_PRICE}\"; var trackClick = function() {  sendClicks(); mraid.open(targetLink); }; var showAd = function(){if (mraid.isViewable()) { sendImpression(); } else { mraid.addEventListener('viewableChange', function (viewable) {  if (viewable) {  mraid.removeEventListener('viewableChange', showAd); sendImpression(); }  }); } }; var sendClicks = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display ='none'; clickTrackers.forEach(function(tracker) { var img = document.createElement('img'); img.src = tracker;  hiddenSpan.appendChild(img);  document.body.appendChild(hiddenSpan);  });    };  var sendImpression = function() { var hiddenSpan = document.createElement('span'); hiddenSpan.style.display = 'none'; impressionTrackers.forEach(function(tracker) { var img = document.createElement('img');  img.src = tracker; hiddenSpan.appendChild(img); document.body.appendChild(hiddenSpan);  });  }; if (mraid.getState() === 'loading') { mraid.addEventListener('ready', showAd); } else { showAd();  }</script><img style='height: 100%; width: auto;' src='http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif' onclick='trackClick()'> ","iurl":"http://ec2-54-194-239-30.eu-west-1.compute.amazonaws.com/banners/Banner2-320x50.gif","cid":"fixed-price-agent-ex_17146","crid":"0","ext":{"group_class":"group_class","uniq_id":"world:Banner0"}}],"seat":"0"}]}
+total of 1.00049e+07 microseconds and 250 sleeps
+BID                                   7        594   0.01%    84.86us/call
+HEARTBEAT                            20        221   0.00%    11.05us/call
+PONG0                                20        243   0.00%    12.15us/call
+PONG1                                20        116   0.00%     5.80us/call
+checkExpiredAuctions                250        168   0.00%     0.67us/call
+checks                              279        467   0.00%     1.67us/call
+configureAgentOnExchange            279          0   0.00%     0.00us/call
+doBid                               279          2   0.00%     0.01us/call
+doConfig                            279          0   0.00%     0.00us/call
+doStartBidding                      279       1424   0.01%     5.10us/call
+doSubmitted                         279        916   0.01%     3.28us/call
+logBidEvents                         10        180   0.00%    18.00us/call
+sendPings                            10        294   0.00%    29.40us/call
+sleep                               250       3480   0.03%    13.92us/call
+sleepPoll                           250    9992495  99.88% 39969.98us/call
+spinPoll                            279       4277   0.04%    15.33us/call
+total of 1.00461e+07 microseconds and 223 sleeps
+HEARTBEAT                            20        207   0.00%    10.35us/call
+PONG0                                20        276   0.00%    13.80us/call
+PONG1                                20        128   0.00%     6.40us/call
+checkExpiredAuctions                223        147   0.00%     0.66us/call
+checks                              251       1008   0.01%     4.02us/call
+configureAgentOnExchange            251          0   0.00%     0.00us/call
+doBid                               251          2   0.00%     0.01us/call
+doConfig                            251          0   0.00%     0.00us/call
+doStartBidding                      251          0   0.00%     0.00us/call
+doSubmitted                         251          0   0.00%     0.00us/call
+logBidEvents                         10        183   0.00%    18.30us/call
+sendPings                            10        308   0.00%    30.80us/call
+sleep                               223       3562   0.04%    15.97us/call
+sleepPoll                           223   10036857  99.91% 45008.33us/call
+spinPoll                            251       3392   0.03%    13.51us/call
+total of 9.99743e+06 microseconds and 224 sleeps
+HEARTBEAT                            20        206   0.00%    10.30us/call
+PONG0                                20        302   0.00%    15.10us/call
+PONG1                                20        149   0.00%     7.45us/call
+checkExpiredAuctions                224        141   0.00%     0.63us/call
+checks                              250        256   0.00%     1.02us/call
+configureAgentOnExchange            250          2   0.00%     0.01us/call
+doBid                               250          3   0.00%     0.01us/call
+doConfig                            250          0   0.00%     0.00us/call
+doStartBidding                      250          0   0.00%     0.00us/call
+doSubmitted                         250          0   0.00%     0.00us/call
+logBidEvents                         10        198   0.00%    19.80us/call
+sendPings                            10        309   0.00%    30.90us/call
+sleep                               224       3976   0.04%    17.75us/call
+sleepPoll                           224    9988522  99.91% 44591.62us/call
+spinPoll                            250       3370   0.03%    13.48us/call
+total of 9.99751e+06 microseconds and 224 sleeps
+HEARTBEAT                            20        215   0.00%    10.75us/call
+PONG0                                19        248   0.00%    13.05us/call
+PONG1                                18        107   0.00%     5.94us/call
+checkExpiredAuctions                224        155   0.00%     0.69us/call
+checks                              247        184   0.00%     0.74us/call
+configureAgentOnExchange            247          0   0.00%     0.00us/call
+doBid                               247          1   0.00%     0.00us/call
+doConfig                            247          0   0.00%     0.00us/call
+doStartBidding                      247          0   0.00%     0.00us/call
+doSubmitted                         247          0   0.00%     0.00us/call
+logBidEvents                         10        150   0.00%    15.00us/call
+sendPings                            10        246   0.00%    24.60us/call
+sleep                               224       3671   0.04%    16.39us/call
+sleepPoll                           224    9989146  99.92% 44594.40us/call
+spinPoll                            247       3385   0.03%    13.70us/call
+total of 1.00471e+07 microseconds and 222 sleeps
+HEARTBEAT                            20        235   0.00%    11.75us/call
+PONG0                                19        223   0.00%    11.74us/call
+PONG1                                20        129   0.00%     6.45us/call
+checkExpiredAuctions                222        157   0.00%     0.71us/call
+checks                              250        222   0.00%     0.89us/call
+configureAgentOnExchange            250          0   0.00%     0.00us/call
+doBid                               250          6   0.00%     0.02us/call
+doConfig                            250          0   0.00%     0.00us/call
+doStartBidding                      250          0   0.00%     0.00us/call
+doSubmitted                         250          0   0.00%     0.00us/call
+logBidEvents                          9        152   0.00%    16.89us/call
+sendPings                             9        255   0.00%    28.33us/call
+sleep                               222       3464   0.03%    15.60us/call
+sleepPoll                           222   10038920  99.92% 45220.36us/call
+spinPoll                            250       3315   0.03%    13.26us/call
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-21T07:56:18Z
+type:   ML::Exception
+pid:    17137; tid: 17257
+what:   timer FD couldn't be created: Too many open files
+stack:
+00: 0x0x7fe745d3efdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7fe745d3efdb]
+01: 0x0x7fe743b8b397 at Datacratic::TransportBase::TransportBase(Datacratic::EndpointBase*) + 0x447 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9e397/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic13TransportBaseC2EPNS_12EndpointBaseE+0x447) [0x7fe743b8b397]
+02: 0x0x7fe743b8b4bf at Datacratic::SocketTransport::SocketTransport(Datacratic::EndpointBase*) + 0xf in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9e4bf/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic15SocketTransportC2EPNS_12EndpointBaseE+0xf) [0x7fe743b8b4bf]
+03: 0x0x7fe743baaf23 at Datacratic::AcceptorT<Datacratic::SocketTransport>::runAcceptThread() + 0x2b3 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xbdf23/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic9AcceptorTINS_15SocketTransportEE15runAcceptThreadEv+0x2b3) [0x7fe743baaf23]
+04: 0x0x7fe7442ec42a in /home/ubuntu/local/lib/libboost_thread.so.1.57.0 + 0x1042a/home/ubuntu/local/lib/libboost_thread.so.1.57.0(+0x1042a) [0x7fe7442ec42a]
+05: 0x0x7fe745f49182 in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x8182/lib/x86_64-linux-gnu/libpthread.so.0(+0x8182) [0x7fe745f49182]
+06: 0x0x7fe744afa47d at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xfa47d/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe744afa47d]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  timer FD couldn't be created: Too many open files
