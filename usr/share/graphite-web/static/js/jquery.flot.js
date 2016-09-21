@@ -1,1 +1,0 @@
-../../../javascript/jquery-flot/jquery.flot.min.js
