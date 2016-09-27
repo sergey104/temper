@@ -1,0 +1,17 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+
+--------------------------[Exception thrown]---------------------------
+time:   2016-09-27T14:51:22Z
+type:   ML::Check_Failure
+pid:    18019; tid: 18019
+what:   /path/to/rtbkit/sample.bootstrap.json doesn't exist: ML::fileExists(path) at ./soa/service/service_base.cc:611 in void Datacratic::ServiceProxies::bootstrap(const string&)
+stack:
+00: 0x0x7f4ef7e2bfdb at __cxa_throw + 0xbb in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xfdb/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0xbb) [0x7f4ef7e2bfdb]
+01: 0x0x7f4ef71ae111 at Datacratic::ServiceProxies::bootstrap(std::string const&) + 0x351 in /home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xd1111/home/ubuntu/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ServiceProxies9bootstrapERKSs+0x351) [0x7f4ef71ae111]
+02: 0x0x41b10e at main + 0x86e in ./bidding_agent_1 + 0x1b10e./bidding_agent_1(main+0x86e) [0x41b10e]
+03: 0x0x7f4ef6519ec5 at __libc_start_main + 0xf5 in /lib/x86_64-linux-gnu/libc.so.6 + 0x21ec5/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) [0x7f4ef6519ec5]
+04: 0x0x41bb3e in ./bidding_agent_1 + 0x1bb3e./bidding_agent_1() [0x41bb3e]
+
+terminate called after throwing an instance of 'ML::Check_Failure'
+  what():  /path/to/rtbkit/sample.bootstrap.json doesn't exist: ML::fileExists(path) at ./soa/service/service_base.cc:611 in void Datacratic::ServiceProxies::bootstrap(const string&)

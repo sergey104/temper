@@ -1,0 +1,7 @@
+FD limit too low: 1024/4096 smaller than recommended 65535
+FD limit raised to: 4096
+2016-09-27 14:54:09.750 [1;32mSlaveBankerArguments [1;34musing zmq interface for the MasterBanker[0m
+2016-09-27 14:54:09.751 [1;32mZMQ Error [1;34mdropping message for agents[0m
+pid:18024
+terminate called after throwing an instance of 'ML::Exception'
+  what():  connection to '' is unavailable
