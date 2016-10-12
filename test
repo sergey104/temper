@@ -1,0 +1,3 @@
+SHELL=/bin/bash
+MAILTO=fil
+0-59 * * * * /home/fil/copy_bucket

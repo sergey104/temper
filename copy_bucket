@@ -1,0 +1,5 @@
+#!/bin/bash
+mess="copy done"
+mv /home/fil/stat/* /home/fil/mybucket
+echo "$mess" 
+
